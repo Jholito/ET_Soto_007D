@@ -1,0 +1,138 @@
+{
+  "asignaturas": [
+    {
+      "id": "1",
+      "nombre": "Matemáticas",
+      "sala": "Aula 101",
+      "horario": "Lunes 8:00-10:00",
+      "profesor": 1,
+      "imagePath": "assets/asignaturas/matematica.PNG",
+      "alumnos": [
+        101,
+        102,
+        103,
+        104
+      ],
+      "justificaciones": [
+        {
+          "id": "1",
+          "alumno": "22222222",
+          "justificacion": "no podre ir",
+          "comentario": ""
+        },
+        {
+          "id": "2",
+          "alumno": "11111111",
+          "justificacion": "no podre ir",
+          "comentario": ""
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "Historia",
+      "sala": "Aula 202",
+      "horario": "Martes 10:00-12:00",
+      "profesor": 2,
+      "imagePath": "assets/asignaturas/lenguaje.PNG",
+      "alumnos": [
+        104,
+        105,
+        106
+      ],
+      "justificaciones": [
+        {
+          "id": "1",
+          "alumno": "44444444",
+          "justificacion": "no podre ir, me surgio algo",
+          "comentario": ""
+        }
+      ]
+    }
+  ],
+  "profesores": [
+    {
+      "id": "1",
+      "rut": "123456789",
+      "nombre": "Coka",
+      "apellido": "Pérez",
+      "email": "cperez@escuela.com",
+      "contraseña": "123456",
+      "activo": true
+    },
+    {
+      "id": "2",
+      "rut": "987654321",
+      "nombre": "Ana",
+      "apellido": "Gómez",
+      "email": "agomez@escuela.com",
+      "contraseña": "abcdef",
+      "activo": true
+    }
+  ],
+  "alumnos": [
+    {
+      "id": "101",
+      "rut": "11111111",
+      "nombre": "Juane",
+      "apellido": "López",
+      "email": "jlopez@escuela.com",
+      "contraseña": "juan123",
+      "activo": true
+    },
+    {
+      "id": "102",
+      "rut": "22222222",
+      "nombre": "María",
+      "apellido": "Díaz",
+      "email": "mdiaz@escuela.com",
+      "contraseña": "maria456",
+      "activo": true
+    },
+    {
+      "id": "103",
+      "rut": "33333333",
+      "nombre": "Luis",
+      "apellido": "Torres",
+      "email": "ltorres@escuela.com",
+      "contraseña": "luis789",
+      "activo": false
+    },
+    {
+      "id": "104",
+      "rut": "44444444",
+      "nombre": "Sofía",
+      "apellido": "Martínez",
+      "email": "smartinez@escuela.com",
+      "contraseña": "sofia101",
+      "activo": true
+    },
+    {
+      "id": "105",
+      "rut": "55555555",
+      "nombre": "Pedro",
+      "apellido": "García",
+      "email": "pgarcia@escuela.com",
+      "contraseña": "pedro202",
+      "activo": true
+    },
+    {
+      "id": "106",
+      "rut": "66666666",
+      "nombre": "Laura",
+      "apellido": "Hernández",
+      "email": "lhernandez@escuela.com",
+      "contraseña": "laura303",
+      "activo": false
+    },
+    {
+      "id": "c74a",
+      "rut": "196869581",
+      "nombre": "Diego",
+      "apellido": "Pinilla",
+      "email": "diego@gmail.com",
+      "contraseña": "diego123",
+      "activo": true
+    }
+  ]
+}

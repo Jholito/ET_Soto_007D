@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Justificaciones</ion-title>
+    </ion-toolbar>
+  </ion-header>  
+  <ion-buttons>
+    <ion-button (click)="goBack()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-card *ngFor="let asig of asignatura">
+    <img 
+      alt="{{ asig.nombre }}" 
+      [src]="asig.imagePath" 
+      style="max-height: 150px; object-fit: cover; width: 100%;"
+    />
+    <ion-card-header>
+      <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <ion-card-title>{{ asig.nombre }}</ion-card-title>
+      </div>
+    </ion-card-header>
+    <ion-card-content>
+      <div *ngFor="let justificacion of asig.justificaciones" style="margin-top: 20px;">
+        <p><strong>Rut:</strong> {{ justificacion.alumno }}</p>
+        <p><strong>Justificacion:</strong> {{ justificacion.justificacion }}</p>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

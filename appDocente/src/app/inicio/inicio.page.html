@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">¡ Bienvenido !</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <img alt="Silhouette of mountains" src="assets/clases.jpg" />
+    <ion-card-header>
+      <ion-card-title>Tus Asignaturas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Revisa tus asignaturas asociadas para este periodo...
+    </ion-card-content>
+    <ion-button expand="block" style="margin: 10px;" (click)="goToAsignaturas()">Ver Asignaturas</ion-button>
+  </ion-card> 
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="assets/perfil.webp" />
+    <ion-card-header>
+      <ion-card-title>Tu Perfil</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Revisa tus datos...
+    </ion-card-content>
+    <ion-button expand="block" style="margin: 10px;" (click)="goToPerfil()">Ver Perfil</ion-button>
+  </ion-card>   
+</ion-content>

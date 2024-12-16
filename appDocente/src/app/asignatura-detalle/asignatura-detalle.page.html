@@ -1,0 +1,47 @@
+<ion-content [fullscreen]="true" class="ion-no-background">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Detalle de Asignatura</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-buttons>
+    <ion-button (click)="goBack()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-card *ngFor="let asig of asignatura">
+    <img 
+      alt="{{ asig.nombre }}" 
+      [src]="asig.imagePath" 
+      style="max-height: 150px; object-fit: cover; width: 100%;"
+    />
+    <ion-card-header>
+      <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <ion-card-title>{{ asig.nombre }}</ion-card-title>
+        <ion-button size="default" fill="outline" (click)="scanQRCode()">
+          <ion-icon name="qr-code-outline"></ion-icon>
+          Escanear QR
+        </ion-button>
+      </div>
+      <ion-button expand="block" size="default" fill="outline" style="margin-top: 10px;" (click)="goToJustificaciones(asig.id)">
+        Justificaciones
+      </ion-button>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Aula:</strong> {{ asig.sala }}</p>
+      <p><strong>Horario:</strong> {{ asig.horario }}</p>
+      <ion-list>
+        <ion-list-header>
+          <ion-label>Alumnos</ion-label>
+        </ion-list-header>
+        <ion-item *ngFor="let alumno of asig.alumnos">
+          <ion-icon name="person-circle-outline" slot="start" color="primary"></ion-icon>
+          <ion-label>
+            <h3>{{ alumnos[alumno]?.nombre }} {{ alumnos[alumno]?.apellido }}</h3>
+            <p><strong>RUT:</strong> {{ alumnos[alumno]?.rut }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
