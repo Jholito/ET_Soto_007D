@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Perfil del Usuario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Información del Usuario</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p><strong>RUT:</strong> {{ user.rut }}</p>
+      <p><strong>Nombre:</strong> {{ user.nombre }}</p>
+      <p><strong>Apellido:</strong> {{ user.apellido }}</p>
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <ion-button expand="block" (click)="goToModificarPerfil()">Modificar Información</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+

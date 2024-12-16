@@ -1,0 +1,27 @@
+<ion-app>
+  <!-- Side Menu -->
+  <ion-menu contentId="main-content" menuId="main-menu" side="start">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menú</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <!-- Opción para ir a Landing -->
+        <ion-item button (click)="navigateTo('inicio')">
+          <ion-icon slot="start" name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </ion-item>
+        <!-- Botón de Cerrar Sesión -->
+        <ion-item button (click)="logout()">
+          <ion-icon slot="start" name="arrow-back-circle"></ion-icon>
+          <ion-label>Cerrar Sesión</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <!-- Contenido principal -->
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>
